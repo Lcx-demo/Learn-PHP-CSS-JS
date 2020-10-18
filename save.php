@@ -1,4 +1,5 @@
 <?php
+//从$_POST超级全局变量中获取提交信息
 $content = $_POST['content'];
 $username = $_POST['username'];
 

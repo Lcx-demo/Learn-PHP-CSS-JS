@@ -1,7 +1,7 @@
 <?php
     include("db.php");
     $sql="SELECT * FROM msg ORDER BY id desc";
-    $data=read($pdo, $sql);
+    $data=read($pdo, $sql);//读取数据username和content
 ?>
 <html>
     <head>
@@ -18,6 +18,7 @@
 
     <body>
         <div class='add'>
+            //创建提交表单 POST方法
             <form action="save.php" method='POST'>
                 <textarea name='content'></textarea>
                 <input name='username' class='username' type='text' />
